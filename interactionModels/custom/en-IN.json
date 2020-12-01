@@ -1,0 +1,112 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "employee assesment test",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AnswerIntent",
+          "slots": [
+            {
+              "name": "option",
+              "type": "OPTIONS"
+            }
+          ],
+          "samples": [
+            "my answer is {option}",
+            "choose option {option}",
+            "I choose {option}",
+            "it\u0027s {option}",
+            "it\u0027s option {option}",
+            "option {option}",
+            "I know this one it\u0027s {option}",
+            "{option} is the answer",
+            "it is {option}",
+            "the answer is {option}",
+            "{option}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "C",
+                "synonyms": [
+                  "3",
+                  "three",
+                  "sea",
+                  "see",
+                  "c",
+                  "c."
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "B",
+                "synonyms": [
+                  "2",
+                  "two",
+                  "bee",
+                  "b",
+                  "b."
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "A",
+                "synonyms": [
+                  "1",
+                  "one",
+                  "a",
+                  "a."
+                ]
+              }
+            }
+          ],
+          "name": "OPTIONS"
+        }
+      ],
+      "modelConfiguration": {
+        "fallbackIntentSensitivity": {
+          "level": "LOW"
+        }
+      }
+    }
+  },
+  "version": "4"
+}

@@ -1,0 +1,81 @@
+{
+    "type": "APL",
+    "version": "1.4",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "message"
+        ],
+        "items": [
+            {
+                "type": "Frame",
+                "when": "${@viewportProfile == @hubLandscapeSmall}",
+                "width": "100vw",
+                "height": "100vh",
+                "backgroundColor": "#FFFFFF",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "width": "830",
+                                "height": "200",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "30",
+                                "text": "${message.text}",
+                                "left": "70",
+                                "top": "150"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Frame",
+                "when": "${@viewportProfile == @hubLandscapeLarge}",
+                "width": "100vw",
+                "height": "100vh",
+                "backgroundColor": "#FFFFFF",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "width": "1100",
+                                "height": "350",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "50",
+                                "text": "${message.text}",
+                                "left": "70",
+                                "top": "220"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

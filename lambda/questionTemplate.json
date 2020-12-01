@@ -1,0 +1,153 @@
+{
+    "type": "APL",
+    "version": "1.4",
+    "settings": {},
+    "theme": "dark",
+    "import": [
+        {
+            "name": "alexa-viewport-profiles",
+            "version": "1.1.0"
+        }
+    ],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+        "parameters": [
+            "questionData"
+        ],
+        "items": [
+            {
+                "type": "Frame",
+                "when": "${@viewportProfile == @hubLandscapeLarge}",
+                "width": "100vw",
+                "height": "100vh",
+                "backgroundColor": "#FFFFFF",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "width": "1200",
+                                "alignSelf": "center",
+                                "position": "relative",
+                                "textAlign": "center",
+                                "text": "${questionData.question}",
+                                "color": "#1E2222",
+                                "fontSize": "70",
+                                "fontWeight": "normal",
+                                "top": "100"
+                            },
+                            {
+                                "type": "Text",
+                                "width": "1100",
+                                "height": "130",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "40",
+                                "text": "A) ${questionData.option1}",
+                                "left": "70",
+                                "top": "150"
+                            },
+                            {
+                                "type": "Text",
+                                "width": "1100",
+                                "height": "130",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "40",
+                                "text": "B) ${questionData.option2}",
+                                "left": "70",
+                                "top": "200"
+                            },
+                            {
+                                "type": "Text",
+                                "width": "1100",
+                                "height": "130",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "40",
+                                "text": "C) ${questionData.option3}",
+                                "left": "70",
+                                "top": "250"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "Frame",
+                "when": "${@viewportProfile == @hubLandscapeSmall}",
+                "width": "100vw",
+                "height": "100vh",
+                "backgroundColor": "#FFFFFF",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "width": "900",
+                                "alignSelf": "center",
+                                "position": "relative",
+                                "textAlign": "center",
+                                "text": "${questionData.question}",
+                                "color": "#1E2222",
+                                "fontSize": "50",
+                                "fontWeight": "normal",
+                                "top": "60"
+                            },
+                            {
+                                "type": "Text",
+                                "width": "830",
+                                "height": "100",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "30",
+                                "text": "A) ${questionData.option1}",
+                                "left": "70",
+                                "top": "100"
+                            },
+                            {
+                                "type": "Text",
+                                "width": "830",
+                                "height": "100",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "30",
+                                "text": "B) ${questionData.option2}",
+                                "left": "70",
+                                "top": "100"
+                            },
+                            {
+                                "type": "Text",
+                                "width": "830",
+                                "height": "100",
+                                "alignSelf": "auto",
+                                "position": "relative",
+                                "color": "#1E2222",
+                                "fontSize": "30",
+                                "text": "C) ${questionData.option3}",
+                                "left": "70",
+                                "top": "100"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
